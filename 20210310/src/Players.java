@@ -16,9 +16,10 @@ public class Players {
         }
         judges = cnt;
     }
-    public void sortMap(){
+    public List<Player> sortMap(){
         List<Player> list = new ArrayList<>(map.values());
         Collections.sort(list);
+        return list;
     }
     public void addPlayer(){
         map.put(map.size(),new Player());
@@ -43,9 +44,8 @@ public class Players {
         }
     }
     public void getScore(){
-        ArrayList<Float> list = new ArrayList<>();
-        sortMap();
-        for (Player p : map.values()){
+        List<Player> list = sortMap();
+        for (Player p : list){
             System.out.println(p.getScore());
         }
     }
