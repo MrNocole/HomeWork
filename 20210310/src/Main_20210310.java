@@ -1,7 +1,7 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class Main {
+public class Main_20210310 {
     public static void main(String[] args) {
         int tmp ;
         Players players = new Players();
